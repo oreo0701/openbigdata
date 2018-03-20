@@ -1,0 +1,18 @@
+#coding: cp949
+Olympic_Medalist={"¼îÆ®Æ®·¢":"ÃÖ¹ÎÁ¤","½ºÇÇÆ®½ºÄÉÀÌÆÃ":"ÀÌ»óÈ­","½ºÄÌ·¹Åæ":"À±Çüºó","½ºÇÇÆ®½ºÄÉÀÌÆÃ":"±è¹Î¼®"}
+
+print("Step 1] Printing the raw type of dictionary, 'Olympic_Medalist'")
+print(Olympic_Medalist)
+
+print("\nStep 2] Printing the key lists using Olympic_Medalist.keys() function"
+print(Olympic_Medalist.keys())
+
+print("\nStep 3] Printing the value lists using Olympic_Medalist.keys() function")
+print(Olympic_Medalist.values())
+
+
+print("\nStep 4] Trying to search character of 'ÃÖ¹ÎÁ¤' in the Olympic_Medalist.keys() function")
+
+if 'ÃÖ¹ÎÁ¤' in Olympic_Medalist:
+    for player_key
+print(Olympic_Medalist.values())
