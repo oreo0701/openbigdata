@@ -12,5 +12,4 @@ while a < 334 and b <201 and c < 181 and d < 112:
     m += 1
     total = subtotal + sum
     
-
 print(total)
