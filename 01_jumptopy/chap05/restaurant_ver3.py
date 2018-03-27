@@ -12,7 +12,14 @@ class Restaurant:
     def open_restaurant(self):
             print("저희 %s 레스토랑 오픈했습니다.\n" %self.restaurant_name)
     def number_served(self):
-            pass
+        pass
+
+    def reset_number_served(number):
+        pass
+    def increment_number_served(number):
+        pass
+    def check_customer_number(self):
+        pass
     def __del__(self):
             print("%s 레스토랑 문닫습니다." % self.restaurant_name)
 
