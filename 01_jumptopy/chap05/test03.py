@@ -9,10 +9,10 @@ def read_content():
 
     choice =input("poll.txt파일을 찾을 수 없습니다. 아래 중 선택하세요.\n"
            "1. 종료 2.새로운 파일생성 3.변경된 파일 경로 입력: ")
-    if choice == '1':
-        print("프로그램을 종료합니다.")
-    elif choice == '2':
-        while True:
+    while True:
+        if choice == '1':
+            print("프로그램을 종료합니다.")
+        elif choice == '2':
             survey=input("프로그램이 왜 좋으세요?(\"종료\" 입력시 프로그램 종료): ")
             if survey == "종료":
                 print("프로그램을 종료합니다.")
@@ -21,5 +21,7 @@ def read_content():
                 result = f'[{name}] {survey}'
                 f = open(".\\new_poll.txt","w",encoding='UTF8')
                 f.write(result)
+        elif choice == '3':
+
 
 read_content()
