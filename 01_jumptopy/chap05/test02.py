@@ -9,5 +9,5 @@ while True:
         name=input("이름을 입력해주세요: ")
         print('설문에 응해 주셔서 감사합니다.')
         result= f'[{name}] {survey}\n'
-        f = open(".\\poll.txt", "a", encoding='UTF8')
+        f = open(".\\pol_pol.txt", "a", encoding='UTF8')
         f.write(result)
