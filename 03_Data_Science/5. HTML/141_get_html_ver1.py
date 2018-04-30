@@ -34,24 +34,21 @@ index=0
 is_movie = True
 rank_list=[]
 rank_info=[]
-index = 1
+
 for tag in tags[0].strings:
     if tag == '\n':
         pass
     elif is_movie == True:
-        rank_info.append(index)
-        rank_info.append(tag)
+        movie_name.append(tag)
+        # rank_info.append(movie_name)
         is_movie = False
-    else:
-        rank_info.append(tag)
-        rank_list.append(rank_info)
-        print(rank_info)
-        rank_info=[]
-        is_movie = True
-        index +=1
 
-movie_table = DataFrame(rank_list, columns=('rank','movie name','movie rank change'))
-movie_table.to_csv('naver_movie_rank.csv', encoding="cp949",mode='w',index=False)
+    else:
+        movie_score_change.append(tag)
+        # rank_info.append(movie_score_change)
+        # rank_list.append(rank_list)
+        is_movie = True
+
 
 # result(movie_name,movie_score_change)
 

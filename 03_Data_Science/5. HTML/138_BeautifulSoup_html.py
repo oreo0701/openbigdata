@@ -17,14 +17,14 @@ soup=BeautifulSoup(html, 'html.parser')
 # print(tag)
 
 tag=soup.a
-print(tag)
+# print(tag)
 #
 # print("\ntag.name")
 # print(tag.name)
 
-print("\ntag.attrs")
-print(tag.attrs)
-
-print("tag.string")
+# print("\ntag.attrs")
+# print(tag.attrs )
+#
+# print("tag.string")
 # print(tag.string)
-# print(tag.text)
+print(tag.text)
