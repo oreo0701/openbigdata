@@ -15,7 +15,9 @@ def print_main_menu():
     print("2. 장비제어")
     print("3. 스마트모드")
     print("4. 날씨 확인")
-    print("5. 프로그램 종료")
+    print("5. 시뮬레이션모드")
+    print("6. 프로그램 종료")
+
 
 def print_device_status(device_name,devcie_status):
     print("%s 상태: "%device_name, end="")
@@ -92,6 +94,11 @@ def smart_mode():
 
 print("<스마트 홈네트워크 시뮬레이션 프로그램 ver 1.0>")
 print("                                 - 이현구 -")
+
+def simulation_mode():
+    pass
+
+
 while True:
     print_main_menu()
     menu_num = int(input("메뉴를 선택하세요: "))
@@ -105,6 +112,8 @@ while True:
     elif(menu_num == 4):
         get_realtime_weather_info()
     elif(menu_num == 5):
+        simulation_mode()
+    elif(menu_num == 6):
         break
 
 
@@ -120,4 +129,5 @@ json_data = requests.get(url).json()
 
 RM1 = json_data["response"]["body"]["items"]["item"][5]["fcstValue"]
 print("예상 강수량은 " + str(RM1) + "mm 입니다.")
+
 
