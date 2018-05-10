@@ -4,8 +4,8 @@ import datetime
 
 #current time
 now = datetime.datetime.now()
-base_date= now.year+now.month+now.day
-base_time=now.hour+now.minute
+base_date=str(now.year)+str(now.month)+str(now.day)
+base_time=str(now.hour)+str(now.minute)
 
 # location
 x=89

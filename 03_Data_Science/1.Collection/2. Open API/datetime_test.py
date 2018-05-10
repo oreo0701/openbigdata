@@ -3,7 +3,7 @@ import json
 import datetime
 
 #current time
-now = datetime.datetime.now("%Y %m %d %I %M")
+now = datetime.datetime.now()
 base_date=str(now.year)+str(now.month)+str(now.day)
 base_time=str(now.hour)+str(now.minute)
 
