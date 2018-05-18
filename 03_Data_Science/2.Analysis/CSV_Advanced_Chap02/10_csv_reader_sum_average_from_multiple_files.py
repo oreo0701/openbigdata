@@ -20,11 +20,12 @@ for input_file in glob.glob(os.path.join(input_path, 'sales_*')):
         filereader = csv.reader(csv_in_file)
         output_list = []
         output_list.append(os.path.basename(input_file))
+        header = next(filereader)
         total_sales = 0.0
         number_of_sales = 0.0
         for row in filereader:
             sale_amount = row[3]
-            total_sales += float(str(sale_amount).strip('$').replace(',',' '))
+            total_sales += float(str(sale_amount).strip('$').replace(',',''))
             number_of_sales += 1.0
         average_sales = '{0:.2f}'.format(total_sales/number_of_sales)
         output_list.append(total_sales)
